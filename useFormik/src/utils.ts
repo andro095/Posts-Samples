@@ -22,7 +22,7 @@ export const validationSchema = yup.object().shape({
     age: yup
       .number()
       .required("Age is required")
-      .min(1, "You should have at least 1 year"),
+      .min(1, "You should be at least 1 year old"),
   }),
   location: yup.object().shape({
     address: yup.string().required("Address is required"),
